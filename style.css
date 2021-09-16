@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: animate 20s ease-in-out infinite;
+}
+
+/* This is animation section */
+@keyframes animate{
+    0%,100%{
+        background-image:url(images/img1G.jpg);
+       
+    }
+    25%{
+        background-image:url(images/img5C.jpg);
+    
+    }
+    50%{
+        background-image:url(images/img6C.jpg);
+    }
+    75%{
+        background-image:url(images/img2G.jpg);
+    }
+  
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+nav a img{
+    position: relative;
+    padding:10px;
+}
+nav img{
+    position: relative;
+    width: 70px;
+    
+}
+.navlink{
+    flex:1;
+    text-align:right;
+}
+.navlink ul li {
+   
+    list-style: none;
+    display: inline-block;
+    padding: 25px 10px;
+    position: relative;
+    margin-right: 25px;
+    
+}
+.navlink ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+}
+.navlink ul li a:hover{
+    color:aqua;
+}
+
+.navlink ul li a::after{
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.5s;
+    margin: auto;
+}
+
+.navlink ul li a:hover::after{
+   width: 100%;
+   
+}
+
+/* Text */
+.text{
+    text-align: center;
+    margin-top: 12%;
+    color: rgb(253, 253, 253);
+    justify-content: space-between;
+    
+}
+.text p{
+    font-size: 20px;
+    padding: 20px 0px;
+   
+}
+.text h1{
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 35px;
+}
+
+.btn{
+    
+    display: inline-block;
+    color: rgb(5, 5, 5);
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 12px 34px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer; 
+    background-color: rgb(224, 224, 117);
+}
+.btn:hover{
+    
+    text-decoration: none;
+    /* box-shadow:1px 6px rgb(207, 192, 192); */
+    transform: scale(1.1);
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px)
+{
+    .navlink ul li{
+        padding: 10px 5px;
+        
+    }
+    .navlink ul li a{
+        font-size: 15px;
+        
+    }
+    .navlink ul li a:hover{
+        color:rgb(243, 15, 7);
+    }
+    
+    .navlink{
+       position: fixed;
+       background: rgb(72, 191, 196);
+       height: 100vh;
+       width: 150px;
+       top:0;
+       right:-150px;
+       text-align: left;
+       z-index: 1;
+       transition: 1s;
+   }
+   
+   nav .fa{
+       
+       display:inline-block;
+       color: rgb(248, 248, 248);
+       margin-top: 5px;
+       margin-right: -40px;
+       font-size: 22px;
+       cursor: pointer;
+       margin-left: 10px;
+   }
+   nav a img{
+    margin-left: -78px;
+   }
+   .navlink ul{
+       margin-left:6px;
+   }
+   .text{
+        margin-top: 22%;
+        
+    }
+    .text p{
+        font-size: 17px;
+    }
+    .text h1{
+        font-size: 22px;
+    }
+}
+
+/* About Us Section */
+
+.about{
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    padding: 10px;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/img7C.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.about h1,p{
+    color: aliceblue;
+    padding: 10px;
+}
+.texta{
+    margin-top: 40px;
+    font-size: 22px;
+}
+.about h1{
+    color: blanchedalmond;
+    padding-bottom: 28px;
+
+}
+@media(max-width:700px){
+    .about p{
+        font-size: 17px;
+    }
+}
+
+/* Our Mission */
+
+
+@media(max-width:700px)
+{
+    .row{
+        flex-direction: column;
+    }
+    .layer:hover p.p1{
+        bottom: 0;
+       
+    } 
+    
+}
+
+@media(min-device-width: 701px) and (max-device-width: 1030px) {
+    .layer:hover p.p1{
+        bottom: 0;
+    } 
+  }
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission p{
+    color: black;
+    font-size: 18px;
+    padding: 30px 10px;
+    /* position: relative; */
+}
+.mission h1{
+    font-size: 30px;
+}
+.mission
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.mission-col
+{
+    flex-basis:32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.mission-col img
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.layer
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover
+{
+    background: rgba(207, 80, 80, 0.7);
+}
+.layer h2{
+     transform: translateX(-50%);
+     position: absolute;
+     width: 100%;
+     left: 50%;
+     bottom: 0;
+     font-weight: bold;
+     opacity:0;
+     transition: 0.3s;
+}
+.layer .p1{
+    transform: translatex(-50%);
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    font-weight: 30px;
+    opacity:0;
+    transition: 0.3s;
+}
+.layer:hover h2{
+    bottom: 69%;
+    opacity: 1;
+
+}
+.layer:hover .p1{
+    bottom: 30%;
+    opacity: 1;
+    margin-top: 20px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+/* Contact Section*/
+
+.contact{ 
+    position: relative;
+    text-align: center;
+    margin-top: 8px;
+    background-image: url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 65vh;
+}
+.contact h1{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 35px;
+    padding-top:40px;
+    margin-bottom: 20px;
+}
+.contact-text{
+    display: block;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin:10px auto;
+    padding: 12px 11px;
+    background-color: rgb(225, 232, 238);
+
+}
+.hero-btn{
+    padding: 8px 8px;
+    color:white;
+    background-color: transparent;
+    box-shadow: 5px 5px wheat;
+}
+.hero-btn:hover{
+    color: rgb(21, 106, 180);
+    background-color: aliceblue;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@media(max-height:700px)
+{
+    .contact{
+        min-height: 70vh;
+    }
+}
+/* Footer Section */
+
+.footer
+{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/footer.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 8px;
+}
+.footer p{
+    font-size: 18px;
+    
+}
+.footer .fa{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(192, 37, 96);
+}
+.footer .fa:hover{
+    color: red;
+    cursor: pointer;
+}
+
+@media(max-width:700px)
+{
+    .texta{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
