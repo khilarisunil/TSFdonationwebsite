@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
 
     mail($to, $email_subject, $email_body,$headers );
     mail($visitor_email,$email_subject, $email_body);
-    header("Location: index.html");
+    header("Location: index.php");
     
 }
 else
