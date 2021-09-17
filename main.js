@@ -7,10 +7,10 @@ function hideMenu() {
 }
 
 // var submit=document.getElementById("submit1");
-function sub() {
+// function sub() {
 
-    alert("Your message has been sent successfully!!!");
-}
+//     alert("Your message has been sent successfully!!!");
+// }
 
 
 //for Auto close navbar
