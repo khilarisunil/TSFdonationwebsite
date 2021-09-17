@@ -26,10 +26,10 @@ if (isset($_POST['submit'])) {
     header("Location: index.php");
     if ($result && $result2) {
         $success = "Message was sent successfully, check your email!";
-        /* echo '<script type="text/javascript">alert("Message Sent Successfully. We will contact you shortly.")</script>'; */
+        echo '<script type="text/javascript">alert("Message Sent Successfully. We will contact you shortly.")</script>';
     } else {
         $failed = "Message was not sent, try again later!";
-        /* echo '<script type="text/javascript">alert("Mail was not sent, Try again!.")</script>'; */
+        echo '<script type="text/javascript">alert("Mail was not sent, Try again!.")</script>';
     }
 }
 
