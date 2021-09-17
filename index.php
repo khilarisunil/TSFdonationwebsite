@@ -1,3 +1,5 @@
+<?php include 'contact.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -113,7 +115,7 @@
     <!-- Contact section -->
     <section class="contact" id="contactpage">
         <h1>Contact Us</h1>
-        <form action="contact.php" method="POST">
+        <form action=" " method="POST">
             <input type="text" class="contact-text" name="name" placeholder="Enter your name" required>
             <input type="email" class="contact-text" name="email" placeholder="Enter your email" required>
             <textarea rows="8" class="contact-text" name="message" placeholder="Message" required></textarea>
