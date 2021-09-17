@@ -20,10 +20,17 @@ if (isset($_POST['submit'])) {
 //$to = 'shubhangigondage680@gmail.com';
 
 
-    mail($mailto, $email_subject, $email_body,$headers );
-    mail($visitor_email,$email_subject, $email_body,$headers2 );
-    header("Location: index.php");
+    $result=mail($mailto, $email_subject, $email_body,$headers );
+    $result2=mail($visitor_email,$email_subject, $email_body,$headers2 );
     
+    header("Location: index.php");
+    if ($result && $result2) {
+        $success = "Message was sent successfully, check your email!";
+        /* echo '<script type="text/javascript">alert("Message Sent Successfully. We will contact you shortly.")</script>'; */
+    } else {
+        $failed = "Message was not sent, try again later!";
+        /* echo '<script type="text/javascript">alert("Mail was not sent, Try again!.")</script>'; */
+    }
 }
 else
 {
