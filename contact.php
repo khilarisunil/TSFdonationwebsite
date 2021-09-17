@@ -32,10 +32,7 @@ if (isset($_POST['submit'])) {
         /* echo '<script type="text/javascript">alert("Mail was not sent, Try again!.")</script>'; */
     }
 }
-else
-{
-    echo "error ";
-}
+
 
 ?>
 
