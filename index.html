@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>TSF DONATION CHARITY</title>
+</head>
+
+<body>
+
+    <!-- Home Section -->
+    <section class="home">
+        <nav>
+            <a href="index.html"><img src="images/logo-modified.png"></a>
+            <div class="navlink" id="navlinks" >
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#aboutpage">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="#contactpage">CONTACT US</a>
+                    </li>
+                    <li>
+                        <a href="#donate">DONATE</a>
+                    </li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" id="toggle" onclick="showMenu()"></i>
+        </nav>
+        <div class="text">
+            <p>Small efforts can make Big change,</p>
+            <h1>Together To Help, for <br> The Better World</h1>
+            <p style="padding-bottom: 65px;">We believe that we can save more lifes with you.<br>Your small contribution
+                means a lot!!!</p>
+        
+
+            <a>
+                <form id="donate">
+                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                        data-payment_button_id="pl_HuuWMR7wYCMs4N" async> </script>
+                </form>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="about" id="aboutpage">
+        <div class="texta">
+            <h1>About Us</h1>
+            <p>The TSF is a leading independent child organisation, which works in many states of the country. It's
+                established in 2000.</p>
+            <p>We firmly believe that we can save more lifes with you, which is why, we are fiercely committed to ensure
+                for child deserves the best chance for a bright future, </p>
+            <p>we are proud to be the world's best organisation.<br>By saving the future of young ones.</p>
+            <p>We’ve been able to make a positive impact on the lives of so many children, all thanks to your unwavering
+                support.</p>
+            <p><b>Help us a Build Well</b></p>
+            <p>" History will judge us by the difference we make in the everyday lives of children."<br> -Nelson Mandela
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Our mission -->
+
+    <section class="mission" id="missionpage">
+        <h1>Our Mission</h1>
+        <p>To inspire breakthroughs in the way the world treats children, and come together to bring immediate, and
+            long-lived change in their lives</p>
+        <div class="row">
+            <div class="mission-col">
+                <img src="images/mission1.jpg">
+                <div class="layer">
+                    <h2>Our Responsibility</h2>
+                    <p class="p1">To Enable people to take responsibility for the situation of needy child </p>
+                </div>
+            </div>
+            <div class="mission-col">
+                <img src="images/mission.2.jpg">
+                <div class="layer">
+                    <h2>Assemble potential</h2>
+                    <p class="p1">Motivate child to achieve their goal<br> and discover their potential and help them
+                    </p>
+                </div>
+            </div>
+            <div class="mission-col">
+                <img src="images/mission3.jpg">
+                <div class="layer">
+                    <h2>Serve For Children's</h2>
+                    <p class="p1">Serve the every child of this<br> nation and enables them education facilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contactpage">
+        <h1>Contact Us</h1>
+        <form action="contact.php" method="POST" onsubmit="sub()">
+            <input type="text" class="contact-text" name="name" placeholder="Enter your name" required>
+            <input type="email" class="contact-text" name="email" placeholder="Enter your email" required>
+            <textarea rows="8" class="contact-text" name="message" placeholder="Message" required></textarea>
+            <button type="submit"
+            id="submit1" class="hero-btn" name="submit"><b>SEND MESSAGE</b></button>
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <p style="color: rgb(250, 246, 246);">&copy;copyrights 2021 TSF. All rights reserved!<br> made by @ Shubhangi
+            Gondage.</p>
+        <div class="icons">
+            <a><i class="fa fa-facebook"></i></a>
+            <a><i class="fa fa-twitter"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/" target="__blank"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- Javascript section -->
+    <script src="main.js"> </script>
+
+</body>
+
+</html>
