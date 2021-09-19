@@ -6,11 +6,11 @@ function hideMenu() {
     navLink.style.right = "-150px";
 }
 
-// var submit=document.getElementById("submit1");
-// function sub() {
-
-//     alert("Your message has been sent successfully!!!");
-// }
+// onsubmit function for display message after submitting the contact form
+function sub() {
+    
+    alert("Your message has been sent successfully!!!");
+}
 
 
 //for Auto close navbar
